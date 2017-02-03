@@ -1,0 +1,13 @@
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/bookkeeper/migrations.rb'
+
+Metrics/LineLength:
+  Exclude:
+    - 'lib/bookkeeper/testing_support/common.rake'

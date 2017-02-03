@@ -1,0 +1,20 @@
+# This is the configuration used to check the source code.
+
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'db/migrate/**/*'
+    - 'spec/dummy/**/*'
+  DisplayCopNames: true
+
+Security/Eval:
+  Exclude:
+    - 'Gemfile'
+
+Metrics/LineLength:
+  Description: 'Limit lines to 120 characters.'
+  Max: 120
+
+Metrics/AbcSize:
+  Enabled: false
